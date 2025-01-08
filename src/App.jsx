@@ -52,80 +52,80 @@ const App = () => {
 
   return (
     <div className="App">
-      <section id="home" class="welcome-hero">
+      <section id="home" className="welcome-hero">
         <div className={`top-area`}>
-          <div class="header-area">
+          <div className="header-area">
             <nav
-              class={`navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy ${
+              className={`navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy ${
                 isSticky ? "sticked" : ""
               }`}
               data-minus-value-desktop="70"
               data-minus-value-mobile="55"
               data-speed="1000"
             >
-              <div class="container">
-                <div class="navbar-header">
+              <div className="container">
+                <div className="navbar-header">
                   <button
                     type="button"
-                    class="navbar-toggle"
+                    className="navbar-toggle"
                     data-toggle="collapse"
                     data-target="#navbar-menu"
                   >
-                    <i class="fa fa-bars"></i>
+                    <i className="fa fa-bars"></i>
                   </button>
-                  <a class="navbar-brand" href="index.html">
+                  <a className="navbar-brand" href="index.html">
                     sl studio<span></span>
                   </a>
                 </div>
 
                 <div
-                  class="collapse navbar-collapse menu-ui-design"
+                  className="collapse navbar-collapse menu-ui-design"
                   id="navbar-menu"
                 >
                   <ul
-                    class="nav navbar-nav navbar-right"
+                    className="nav navbar-nav navbar-right"
                     data-in="fadeInDown"
                     data-out="fadeOutUp"
                   >
-                    <li class="scroll active">
+                    <li className="scroll active">
                       <a href="#home">trang chủ</a>
                     </li>
-                    <li class="scroll">
+                    <li className="scroll">
                       <a href="#newconcept">concept mới</a>
                     </li>
-                    <li class="dropdown close-dropdown" id="close-dropdown">
-                      <a class="dropdown-toggle">Concept</a>
+                    <li className="dropdown close-dropdown" id="close-dropdown">
+                      <a className="dropdown-toggle">Concept</a>
                       <ul
-                        class="dropdown-menu-custom"
+                        className="dropdown-menu-custom"
                         id="dropdown-menu-custom"
                       >
-                        <li class="scroll">
+                        <li className="scroll">
                           <a href="#tetnc">Tết ngoại cảnh</a>
                         </li>
-                        <li class="scroll">
+                        <li className="scroll">
                           <a href="#tetstu">Tết trong studio</a>
                         </li>
-                        <li class="scroll">
+                        <li className="scroll">
                           <a href="#sinhnhat">Sinh nhật</a>
                         </li>
-                        <li class="scroll">
+                        <li className="scroll">
                           <a href="#couple">Couple</a>
                         </li>
-                        <li class="scroll">
+                        <li className="scroll">
                           <a href="#profile">Profile</a>
                         </li>
-                        <li class="scroll">
+                        <li className="scroll">
                           <a href="#beauty">Beauty</a>
                         </li>
-                        <li class="scroll">
+                        <li className="scroll">
                           <a href="#nangtho">Nàng thơ</a>
                         </li>
-                        <li class="scroll">
+                        <li className="scroll">
                           <a href="#hocsinh">Học sinh</a>
                         </li>
                       </ul>
                     </li>
-                    <li class="scroll">
+                    <li className="scroll">
                       <a href="#contact">Liên hệ</a>
                     </li>
                   </ul>
@@ -133,11 +133,11 @@ const App = () => {
               </div>
             </nav>
           </div>
-          <div class="clearfix"></div>
+          <div className="clearfix"></div>
         </div>
 
-        <div class="container">
-          <div class="welcome-hero-txt">
+        <div className="container">
+          <div className="welcome-hero-txt">
             <h2>chụp một bộ bất kì - tặng một bộ beauty</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -147,8 +147,8 @@ const App = () => {
         </div>
       </section>
 
-      <section id="newconcept" class="new-concept">
-        <div class="section-header">
+      <section id="newconcept" className="new-concept">
+        <div className="section-header">
           <h2>concept tết 2025</h2>
         </div>
         <div className="container">
@@ -165,12 +165,12 @@ const App = () => {
 
       {allConcept.map((e) => (
         <section id={e.id}>
-          <div class="container">
-            <div class="section-header">
+          <div className="container">
+            <div className="section-header">
               <h2>{e.title}</h2>
             </div>
-            <div class="featured-cars-content">
-              <div id="photo-gallery-tet-nc" class="photo-gallery">
+            <div className="featured-cars-content">
+              <div id="photo-gallery-tet-nc" className="photo-gallery">
                 {e.img.map((photo) => (
                   <Image src={photo} className="gallery-item" />
                 ))}
@@ -180,9 +180,9 @@ const App = () => {
         </section>
       ))}
 
-      <section id="register" class="register">
+      <section id="register" className="register">
         <div className="container">
-          <div class="section-header">
+          <div className="section-header">
             <h2>đăng kí tư vấn</h2>
           </div>
           <div className="register-content">
