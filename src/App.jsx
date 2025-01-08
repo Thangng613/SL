@@ -1,4 +1,4 @@
-import { Button, Carousel, Form, Image, Input, Row, Select, Space } from "antd";
+import { Button, Carousel, Form, Image, Input, Row, Select } from "antd";
 import { options, allConcept } from "./data";
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
