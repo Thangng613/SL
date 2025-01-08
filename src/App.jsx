@@ -48,7 +48,6 @@ const App = () => {
       },
       body: JSON.stringify(values),
     });
-    console.log("🚀 ~ onFinish ~ res:", res)
   };
 
   return (
